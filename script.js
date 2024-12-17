@@ -1,15 +1,28 @@
-const getComputerChoice = () => {
-    let number = Math.floor(Math.random() * (4 - 1) + 1);
-    console.log(number);
-    
+let humanScore  = 0;
+let computerScore  = 0;
 
-    if (number == 1) {
-        console.log('🪨');
-    } else if (number == 2) {
-        console.log('🧻');
-    } else if (number == 3) {
-        console.log('✂️');
-    }
+const getHumanChoice = () => {
+    let value = prompt("Please, Enter a number of 1 to 3");
+    return value;
+    
 }
 
-getComputerChoice();
+const getComputerChoice = () => {
+    let number = Math.floor(Math.random() * (4 - 1) + 1);
+    let computerChoice = '';
+
+    if (number == 1) {
+        computerChoice = '🪨';
+    } else if (number == 2) {
+        computerChoice = '🧻';
+    } else if (number == 3) {
+        computerChoice = '✂️';
+    }
+    
+    return computerChoice;
+}
+
+const playRound = (getHumanChoice, getComputerChoice) => {
+    const getHumanChoice = humanChoiceFunc();
+    const getComputerChoice = computerChoiceFunc();
+}
