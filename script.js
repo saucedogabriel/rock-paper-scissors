@@ -2,16 +2,10 @@ let humanScore = 0;
 let computerScore  = 0;
 
 const getHumanChoice = () => {
-    let value = prompt("Please, Enter a number of 1 to 3");
+    let value = parseInt(prompt("Please, Enter a number of 1 to 3"));
 
-    if (value == 1) {
-        humanChoice = '🪨';
-    } else if (value == 2) {
-        humanChoice = '🧻';
-    } else if (value == 3) {
-        humanChoice = '✂️';
-    } else {
-        alert('Wrong number, please follow the instructions.')
+    if (value < 1 || value > 3) {
+        alert('Wrong number, please follow the instructions.');
     }
     
     return value;
@@ -33,6 +27,8 @@ const playRound = (resultHuman, resultComputer) => {
     } else if ((resultComputer == (resultHuman + 1)) || (resultComputer == 1 && resultHuman == 3)){
         console.log('Computer wins!');
         computerScore++;
+    } else {
+        console.log('Test');
     }
 }
 
