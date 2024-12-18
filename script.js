@@ -20,7 +20,7 @@ const playRound = (resultHuman, resultComputer) => {
     console.log(`Human result: ${resultHuman} \n Computer result: ${resultComputer}`);
 
     if (resultHuman == resultComputer) {
-        console.log('Its a draw!');
+        console.log('Its a tie!');
     }else if ((resultHuman == (resultComputer + 1)) || (resultHuman == 1 && resultComputer == 3)) {
         console.log('Human wins!');
         humanScore++;
@@ -39,7 +39,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 if (humanScore == computerScore){
-    console.log('Its a final draw! 🤝');
+    console.log('Its a final tie! 🤝');
 }else if(humanScore > computerScore){
     console.log('Humans won the game! 😁');
 } else {

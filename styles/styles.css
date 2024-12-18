@@ -1,0 +1,90 @@
+@import url("./first_page/index.css");
+@import url("./first_page/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+	/* Typography*/
+	--base-font: "Host Grotesk", serif;
+	/* --base-font-bold: 'gotham-ssm-bold', sans-serif; */
+
+	/* Pallette Colors*/
+	--blue-color: #2B3153;
+    --white-color: #F1F1F1;
+    --yellow-color: #E7A228;
+
+	/* Font-Size*/
+	--font-60: 6em;
+	--font-50: 5em;
+	--font-40: 4em;
+	--font-35: 3.5em;
+	--font-30: 3em;
+	--font-26: 2.6em;
+	--font-24: 2.4em;
+	--font-22: 2.2em;
+	--font-20: 2em;
+	--font-18: 1.8em;
+	--font-16: 1.6em;
+	--font-14: 1.4em;
+	--font-12: 1.2em;
+	
+	/* Spacing */
+	--spacing--310: 31rem;
+	--spacing--270: 27rem;
+	--spacing--250: 25rem;
+	--spacing--220: 22rem;
+	--spacing--200: 20rem;
+	--spacing--150: 15rem;
+	--spacing--120: 12rem;
+	--spacing--100: 10rem;
+	--spacing--90: 9rem;
+	--spacing--80: 8rem;
+	--spacing--70: 7rem;
+	--spacing--60: 6rem;
+	--spacing--50: 5rem;
+	--spacing--40: 4rem;
+	--spacing--35: 3.5rem;
+	--spacing--30: 3rem;
+	--spacing--24: 2.4rem;
+	--spacing--20: 2rem;
+	--spacing--16: 1.6rem;
+	--spacing--12: 1.2rem;
+	--spacing--10: 1rem;
+	--spacing--8: 0.8rem;
+	--spacing--4: 0.4rem;
+}
+
+*
+*:before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: var(--base-font);
+	font-weight: 300;
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+h1, p , ul, li {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+}

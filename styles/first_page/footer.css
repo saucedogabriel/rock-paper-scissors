@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-color);
+    height: 10vh;
+}
+
+.footer__p {
+    font-size: var(--font-16);
+    text-align: center;
+    color: var(--white-color);
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
