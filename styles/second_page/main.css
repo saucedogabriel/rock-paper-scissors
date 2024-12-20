@@ -7,12 +7,45 @@
     background-color: var(--blue-color);
 }
 
+.section_main__header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.section_main__div-timebar {
+    height: 0.3rem;
+    width: 50vw;
+    background-color: var(--yellow-color);
+    border-radius: 2rem;
+}
+
+.section_main__div-score {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing--12);
+    align-items: center;
+}
+
+.section_main__div-box {
+    display: flex;
+    gap: var(--spacing--4);
+}
+
+
+.section_main__p-score {
+    color: var(--white-color);
+    font-size: var(--font-16);
+}
+
+
 .section_main__article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing--40);
+    gap: var(--spacing--20);
 }
 
 .section_main__div {
@@ -23,7 +56,10 @@
     transform: rotate(180deg);
 }
 
-svg[class~=section_main__svg]> path{
+svg[class~=section_main__svg],
+svg[class~=section_main__svg-rock],
+svg[class~=section_main__svg-paper],
+svg[class~=section_main__svg-scissors]> path{
     fill: var(--blue-color);
     stroke-width: 3px;
     stroke: var(--yellow-color);
@@ -34,11 +70,24 @@ svg > path{
     fill: var(--blue-color);
     stroke-width: 3px;
     stroke: var(--yellow-color);
-    opacity: 1;
 }
 
-.section_main__svg{
-    font-size: 10rem ;
+.section_main__svg-result1, .section_main__svg-result2 {
+    height: 13rem;
+}
+
+.section_main__svg-rock{
+    
+}
+
+
+.section_main__svg-paper{
+    
+}
+
+
+.section_main__svg-scissors{
+    
 }
 
 .section_main__svg-result1{
@@ -46,10 +95,11 @@ svg > path{
 }
 
 .section_main__p {
-    font-size: var(--font-60);
+    font-size: var(--font-50);
     font-weight: 800;
     text-align: center;
     color: var(--white-color);
+    line-height: 5rem;
 }
 
 
@@ -58,7 +108,7 @@ svg > path{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing--40);
+    gap: var(--spacing--12);
 }
 
 .section_main__div2 {
