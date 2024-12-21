@@ -59,8 +59,26 @@ function getResultIa(params) {
             result2.innerHTML = scissors_svg;
         }
     }
-    
     asignValue();
 }
 
 getResultIa();
+
+function reduceTimeBar(params) {
+    let bar = document.querySelector('.section_main__div-timebar');
+    let percent = 80;
+    
+    function decreaseBar(params) {
+        percent = percent - 8;
+        bar.style.width = percent + "vw";
+        console.log(percent);
+
+        if(percent <= 0){
+            clearInterval(set);
+        }
+    }
+    
+    let set = setInterval(decreaseBar, 1000);
+}
+
+reduceTimeBar();
