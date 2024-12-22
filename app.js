@@ -51,7 +51,7 @@ function gameRound(params) {
             return random;
         }
         
-        function asignValue(params) {
+        function asignValueToResultIa(params) {
             let value = getRandom();
             final = value;
 
@@ -63,7 +63,7 @@ function gameRound(params) {
                 result2.innerHTML = scissors_svg;
             }
         }
-        asignValue();
+        asignValueToResultIa();
         return final;
     }
     
@@ -77,19 +77,31 @@ function gameRound(params) {
         function decreaseBar(params) {
             percent = percent - 8;
             bar.style.width = percent + "vw";
-            // console.log(percent);
-    
             if(percent <= 0){
                 clearInterval(set);
             }
         }
-        
         let set = setInterval(decreaseBar, 1000);
         return percent;
     }
 
-    console.log(resultIa, resultUser);
     reduceTimeBar();
+
+    function gameLogic(){
+        let time = 0;
+
+        setInterval(() => {
+            time++;
+            alert('Time is over');
+            console.log(time);
+            
+            if (time >= 1) {
+                clearInterval(set);
+            }
+        }, 11000)
+    }
+
+    gameLogic();
 }
 
 gameRound();
